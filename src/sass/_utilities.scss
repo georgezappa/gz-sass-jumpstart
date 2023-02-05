@@ -1,11 +1,11 @@
-.tdbc-content-maxlength {
+.gz-content-maxlength {
   max-width: 80ch;
 }
 
-$tdbc-alignments: left, center, right !default;
+$gz-alignments: left, center, right !default;
 
-@each $alignment in $tdbc-alignments {
-  .tdbc-text-align--#{$alignment} {
+@each $alignment in $gz-alignments {
+  .gz-text-align--#{$alignment} {
     text-align: #{$alignment};
 
     @if ($alignment == "center") {
@@ -16,34 +16,34 @@ $tdbc-alignments: left, center, right !default;
   }
 }
 
-@each $key in $tdbc-background-colors {
-  .tdbc-background--#{$key} {
-    background-color: tdbc-color($key);
+@each $key in $gz-background-colors {
+  .gz-background--#{$key} {
+    background-color: gz-color($key);
   }
 }
 
-@each $key in $tdbc-ink-colors {
-  .tdbc-ink--#{$key},
-  a.tdbc-ink--#{$key} {
-    color: tdbc-color(#{$key});
+@each $key in $gz-ink-colors {
+  .gz-ink--#{$key},
+  a.gz-ink--#{$key} {
+    color: gz-color(#{$key});
   }
 
-  .tdbc-ink--#{$key} > a:not(.tdbc-button) {
+  .gz-ink--#{$key} > a:not(.gz-button) {
     color: inherit;
   }
 }
 
-.tdbc-mx-auto {
+.gz-mx-auto {
   margin-right: auto;
   margin-left: auto;
 }
 
-@each $key, $unit in $tdbc-spacing {
-  .tdbc-mt-#{$key} {
+@each $key, $unit in $gz-spacing {
+  .gz-mt-#{$key} {
     margin-top: $unit;
   }
 }
 
-.tdbc-mb-none {
+.gz-mb-none {
   margin: 0;
 }
